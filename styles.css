@@ -30,7 +30,7 @@ span {
 .card {
     margin-bottom: 30px;
     margin: 0 auto;
-    min-width: 500px;
+    min-width: 45%;
 }
 
 .footer{
@@ -57,6 +57,13 @@ span {
     font-size: 50px;
 }
 
+.portfolioHeader{
+    color: #fff952;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
 #bottom{
     margin-bottom: 0px;
 }
@@ -65,10 +72,8 @@ span {
 .carousel-control-next-icon {
   height: 100px;
   width: 100px;
-  
   background-size: 100%, 100%;
   border-radius: 50%;
-  
   background-image: none;
 }
 
@@ -86,16 +91,17 @@ span {
 }
 
 #carouselExampleIndicators{
-    margin-top: 25px;
     padding-bottom: 25px;
     padding-top: 25px;
 }
 
 .portfolio{
+    margin-top: 25px;
     margin-bottom: 100px;
 }
 
 .aboutMe{
+    padding: 5px;
     max-width: 501.67px;
     color: #fff952;
 }
