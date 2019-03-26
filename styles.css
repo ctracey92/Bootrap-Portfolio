@@ -9,7 +9,6 @@
 
 .myInfo{
     margin-top: 25px;
-    text-align:justify;
 }
 
 .navbar {
@@ -31,6 +30,7 @@ span {
     margin-bottom: 30px;
     margin: 0 auto;
     min-width: 45%;
+    text-align:justify;
 }
 
 .footer{
@@ -49,6 +49,7 @@ span {
 .profileImg{
     max-height: 200px;
     margin-top: 15px;   
+    border-radius: 50%;
 }
 
 .slogan{
