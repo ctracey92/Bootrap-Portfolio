@@ -107,6 +107,12 @@ span {
     color: #fff952;
 }
 
-i {
+i{
     font-size: 30px;
+    color: #fff952;
 }
+
+em {
+    font-size: 50px;
+}
+
