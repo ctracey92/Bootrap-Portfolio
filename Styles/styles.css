@@ -113,11 +113,11 @@ i{
     color: #fff952;
 }
 
-#resume {
+#resume, #email {
 color: #fff952;
 }
 
 em {
-    font-size: 65px;
+    font-size: 55px; 
 }
 
