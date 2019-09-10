@@ -1,262 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cody Tracey</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Styles/technology-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./Styles/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cody Tracey</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./Styles/technology-icons.css">
-  <link rel="stylesheet" type="text/css" href="./Styles/styles.css">
-</head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="Assets/Images/logo.png" />
+      </a>
 
-<body>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <img class="logo" src="Assets/Images/logo.png">
-    </a>
-
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" id="resume" href="https://docs.google.com/document/d/16UbBSWMNzboTVFJNom3ZI9itTCdll_nMB3tnsCRbKw0/edit?usp=sharing" target="_blank">Resume</a>
-          <a class="nav-link" id="email" href="mailto:cody.tracey92@gmail.com">Email</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container intro">
-    <div class="row justify-content-center">
-      <img class="profileImg mr-3 img-fluid" src="Assets/Images/profile.jpeg" alt="Generic placeholder image">
-    </div>
-    <div class="row justify-content-center">
-      <h1 class="slogan">From Ideas To Reality</h1>
-    </div>
-
-  </div>
-
-  <div class="container myInfo">
-    <div class="row justify-content-center">
-      <p class="aboutMe">
-            My name is Cody Tracey, and thank you for taking the time to view my portfolio.
-            I am originally from the Chicagoland area but moved to Nasvhille 4 years ago after graduating college.
-            I attended Carthage College in Kenosha, WI where I double majored in Classical Studies and Religious Studies and was a part of a number of professional and social organizations such as:
-             Theta Alpha Kappa, Eta Sigma Phi, and Model United Nations. 
-             <br>
-            Currently I work as a project manager at a plastic printing company called Card Marketing Services (CMS). There I coordinate between the customer and internal teams to make sure that the project goes 
-            smoothly and that it is delivered in a timely manner. 
-            While working full time, I attended the Vanderbilt/Trilogy Education Full Stack Web Developing Bootcamp, and am hoping to transition into working in the IT industry.
-            <br>
-            I am proficient  in: HTML5, CSS3, JavaScript, jQuery, Bootstrap, Firebase, NodeJS, MySQL, MongoDB, MySQL, Express, Handelbars.js, ReactJS.
-            
-            <br>
-            <em class="icon-mysql"></em>
-            <em class="icon-jquery-alt"></em>
-            <em class="icon-html5"></em>
-            <em class="icon-js"></em>
-            <em class="icon-nodejs"></em>
-            <em class="icon-mongodb"></em>
-            <em class="icon-bootstrap"></em>
-            <em class="icon-css3-alt"></em>
-            <em class="icon-heroku"></em>
-            <em class="icon-react"></em>
-            
-      </p>
-    </div>
-  </div>
-
-
-  <div class="container portfolio">
-    <div class="row justify-content-center">
-      <h1 class="portfolioHeader">
-        Portfolio
-      </h1>
-    </div>
-    <div>
-      <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card" style="width: 18rem;">
-              <img src="Assets/Images/foodbanx.png" class="card-img-top" alt="foodbanx">
-              <div class="card-body">
-                <h5 class="card-title">Foodbanx</h5>
-                <p class="card-text">A meal-prepping app, that helps you take the stress out of meal-prepping! The user is able to search for recipes and save them to their week. When they save the recipes to their week they are also added to their shopping list, and to Firebase for use later.</p>
-              </div>
-              <div class="card-body">
-                <a class="btn btn-secondary" href="https://ctracey92.github.io/Foodbanx/" target="_blank"
-                  role="button">Deployed</a>
-                <a class="btn btn-secondary" href="https://github.com/ctracey92/Foodbanx" target="_blank"
-                  role="button">Inspect the Code</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 18rem;">
-              <img src="Assets/Images/train.png" class="card-img-top" alt="train">
-              <div class="card-body">
-                <h5 class="card-title">Train Scheduler</h5>
-                <p class="card-text">A train schedulng app. The user inputs the train name, destination, first arrival
-                  time, and how often it runs. Based on the user input the application will calculate the number of
-                  minutes until the next train arrival, and what time it will arrive at. The input, and calculated
-                  variables will be stored in firebase so that it will be loaded on every use of the page.</p>
-              </div>
-              <div class="card-body">
-                <a class="btn btn-secondary" href="https://ctracey92.github.io/trainScheduler/" target="_blank"
-                  role="button">Deployed</a>
-                <a class="btn btn-secondary" href="https://github.com/ctracey92/trainScheduler" target="_blank"
-                  role="button">Inspect the Code</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 18rem;">
-              <img src="Assets/Images/liri.png" class="card-img-top" alt="liri">
-              <div class="card-body">
-                <h5 class="card-title">Liri-Node-App</h5>
-                <p class="card-text">A psuedo siri, just without the voice recognition. This application runs in the command line of your computer, and takes in 4 commands and search paramters and runs them.</p>
-              </div>
-              <div class="card-body">
-                <a class="btn btn-secondary" href="#" target="_blank"
-                  role="button">No Deployed</a>
-                <a class="btn btn-secondary" href="https://github.com/ctracey92/liri-node-app" target="_blank"
-                  role="button">Inspect the Code</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 18rem;">
-              <img src="Assets/Images/giphy.png" class="card-img-top" alt="giphy">
-              <div class="card-body">
-                <h5 class="card-title">Giphy</h5>
-                <p class="card-text">A gif api project, on load of the page the gif buttons will be generated, when
-                  clicked on it will load a series of still gifs from giphy via their API. When the gif is clicked it
-                  will start playing, when clicked again it will go back to a still.The user can add new gif buttons via
-                  the search bar.</p>
-              </div>
-              <div class="card-body">
-                <a class="btn btn-secondary" href="https://ctracey92.github.io/giphy/" target="_blank"
-                  role="button">Deployed</a>
-                <a class="btn btn-secondary" href="https://github.com/ctracey92/giphy/" target="_blank"
-                  role="button">Inspect the Code</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 18rem;">
-              <img src="Assets/Images/mngr.png" class="card-img-top" alt="giphy">
-              <div class="card-body">
-                <h5 class="card-title">MNGR</h5>
-                <p class="card-text">MNGR is an intuitive project management app that allows users to: 
-                  Track multiple projects,
-                  Create project-specific tasks,
-                  Assign tasks to other users,
-                  Track task details,
-                  See and update the project status,
-                  View the start date and estimated complete date.</p>
-              </div>
-              <div class="card-body">
-                <a class="btn btn-secondary" href="https://murmuring-gorge-74790.herokuapp.com" target="_blank"
-                  role="button">Deployed</a>
-                <a class="btn btn-secondary" href="https://github.com/ctracey92/MNGR" target="_blank"
-                  role="button">Inspect the Code</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 18rem;">
-              <img src="Assets/Images/web-scraper.png" class="card-img-top" alt="giphy">
-              <div class="card-body">
-                <h5 class="card-title">Web Scraper</h5>
-                <p class="card-text">
-                  An app that on the click of a button scrapes the United Nations news site for news articles, saves them to a Mongo DB, then displays them to the page. The user is then able to comment on the articles, and view comments that other people have made.  
-                </p>
-              </div>
-              <div class="card-body">
-                <a class="btn btn-secondary" href="https://pacific-beyond-85965.herokuapp.com/" target="_blank"
-                  role="button">Deployed</a>
-                <a class="btn btn-secondary" href="https://github.com/ctracey92/web-scraper/" target="_blank"
-                  role="button">Inspect the Code</a>
-
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card" style="width: 18rem;">
-              <img src="Assets/Images/bind.PNG" class="card-img-top" alt="bind-it-app">
-              <div class="card-body">
-                <h5 class="card-title">BIND</h5>
-                <p class="card-text">
-                  A social media managing & marketing app for new businesses and social media influencers to help create and grow their brand.
-                  Please note that the Deployed version takes a minute to load, this is being worked on.  
-                </p>
-              </div>
-              <div class="card-body">
-                <a class="btn btn-secondary" href="https://bind-it-app.com/" target="_blank"
-                  role="button">Deployed</a>
-                <a class="btn btn-secondary" href="https://github.com/ctracey92/bind/" target="_blank"
-                  role="button">Inspect the Code</a>
-
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <nav id="bottom" class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-      <div class="" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/ctracey92/" target="_blank"> <i class="fab fa-github-square"></i><span class="sr-only"></span></a>
-            
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/cody-tracey/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a
+              class="nav-link"
+              id="resume"
+              href="https://docs.google.com/document/d/16UbBSWMNzboTVFJNom3ZI9itTCdll_nMB3tnsCRbKw0/edit?usp=sharing"
+              target="_blank"
+              >Resume</a
+            >
+            <a class="nav-link" id="email" href="mailto:cody.tracey92@gmail.com"
+              >Email</a
+            >
           </li>
         </ul>
       </div>
     </nav>
-  </div>
-<div class="scripts">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-      crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-      crossorigin="anonymous">
-    </script>
-</div>
-</body>
+
+    <div class="container intro">
+      <div class="row justify-content-center">
+        <img
+          class="profileImg mr-3 img-fluid"
+          src="Assets/Images/profile.jpeg"
+          alt="Generic placeholder image"
+        />
+      </div>
+      <div class="row justify-content-center">
+        <h1 class="slogan">From Ideas To Reality</h1>
+      </div>
+    </div>
+
+    <div class="container myInfo">
+      <div class="row justify-content-center">
+        <p class="aboutMe">
+          My name is Cody Tracey, and thank you for taking the time to view my
+          portfolio. I am originally from the Chicagoland area but moved to
+          Nasvhille 4 years ago after graduating college. I attended Carthage
+          College in Kenosha, WI where I double majored in Classical Studies and
+          Religious Studies and was a part of a number of professional and
+          social organizations such as: Theta Alpha Kappa, Eta Sigma Phi, and
+          Model United Nations.
+          <br />
+          Currently I work as a project manager at a plastic printing company
+          called Card Marketing Services (CMS). There I coordinate between the
+          customer and internal teams to make sure that the project goes
+          smoothly and that it is delivered in a timely manner. While working
+          full time, I attended the Vanderbilt/Trilogy Education Full Stack Web
+          Developing Bootcamp, and am hoping to transition into working in the
+          IT industry.
+          <br />
+          I am proficient in: HTML5, CSS3, JavaScript, jQuery, Bootstrap,
+          Firebase, NodeJS, MySQL, MongoDB, MySQL, Express, Handelbars.js,
+          ReactJS.
+
+          <br />
+          <em class="icon-mysql"></em>
+          <em class="icon-jquery-alt"></em>
+          <em class="icon-html5"></em>
+          <em class="icon-js"></em>
+          <em class="icon-nodejs"></em>
+          <em class="icon-mongodb"></em>
+          <em class="icon-bootstrap"></em>
+          <em class="icon-css3-alt"></em>
+          <em class="icon-heroku"></em>
+          <em class="icon-react"></em>
+        </p>
+      </div>
+    </div>
+
+    <div class="container inProgressSection">
+      <div class="row justify-content-center">
+        <h1 class="portfolioHeader">Works in Progress</h1>
+      </div>
+      <div class="progressItem">
+        <div class="row justify-content-center">
+          <img
+            class="inProgress"
+            src="Assets/Images/charlesLoyd.png"
+            alt="charlesloyd.com"
+          />
+        </div>
+        <div class="row justify-content-center">
+          <a
+            class="btn btn-secondary inProgressBtn"
+            href="https://ctracey92.github.io/charlesLoyd/"
+            target="_blank"
+            role="button"
+            >View Me!</a
+          >
+        </div>
+      </div>
+      <br />
+      <div class="progressItem">
+        <div class="row justify-content-center">
+          <img
+            class="inProgress"
+            src="Assets/Images/bind.PNG"
+            alt="bind-it-app.com"
+          />
+        </div>
+        <div class="row justify-content-center">
+          <a
+            class="btn btn-secondary inProgressBtn"
+            href="https://www.bind-it-app.com"
+            target="_blank"
+            role="button"
+            >View Me!</a
+          >
+        </div>
+      </div>
+      <br />
+    </div>
+
+    <div class="container portfolio">
+      <div class="row justify-content-center">
+        <h1 class="portfolioHeader">
+          Portfolio
+        </h1>
+      </div>
+      <div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-interval="false"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card" style="width: 18rem;">
+                <img
+                  src="Assets/Images/foodbanx.png"
+                  class="card-img-top"
+                  alt="foodbanx"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Foodbanx</h5>
+                  <p class="card-text">
+                    A meal-prepping app, that helps you take the stress out of
+                    meal-prepping! The user is able to search for recipes and
+                    save them to their week. When they save the recipes to their
+                    week they are also added to their shopping list, and to
+                    Firebase for use later.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    class="btn btn-secondary"
+                    href="https://ctracey92.github.io/Foodbanx/"
+                    target="_blank"
+                    role="button"
+                    >Deployed</a
+                  >
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/ctracey92/Foodbanx"
+                    target="_blank"
+                    role="button"
+                    >Inspect the Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img
+                  src="Assets/Images/train.png"
+                  class="card-img-top"
+                  alt="train"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Train Scheduler</h5>
+                  <p class="card-text">
+                    A train schedulng app. The user inputs the train name,
+                    destination, first arrival time, and how often it runs.
+                    Based on the user input the application will calculate the
+                    number of minutes until the next train arrival, and what
+                    time it will arrive at. The input, and calculated variables
+                    will be stored in firebase so that it will be loaded on
+                    every use of the page.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    class="btn btn-secondary"
+                    href="https://ctracey92.github.io/trainScheduler/"
+                    target="_blank"
+                    role="button"
+                    >Deployed</a
+                  >
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/ctracey92/trainScheduler"
+                    target="_blank"
+                    role="button"
+                    >Inspect the Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img
+                  src="Assets/Images/liri.png"
+                  class="card-img-top"
+                  alt="liri"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Liri-Node-App</h5>
+                  <p class="card-text">
+                    A psuedo siri, just without the voice recognition. This
+                    application runs in the command line of your computer, and
+                    takes in 4 commands and search paramters and runs them.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    class="btn btn-secondary"
+                    href="#"
+                    target="_blank"
+                    role="button"
+                    >No Deployed</a
+                  >
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/ctracey92/liri-node-app"
+                    target="_blank"
+                    role="button"
+                    >Inspect the Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img
+                  src="Assets/Images/giphy.png"
+                  class="card-img-top"
+                  alt="giphy"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Giphy</h5>
+                  <p class="card-text">
+                    A gif api project, on load of the page the gif buttons will
+                    be generated, when clicked on it will load a series of still
+                    gifs from giphy via their API. When the gif is clicked it
+                    will start playing, when clicked again it will go back to a
+                    still.The user can add new gif buttons via the search bar.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    class="btn btn-secondary"
+                    href="https://ctracey92.github.io/giphy/"
+                    target="_blank"
+                    role="button"
+                    >Deployed</a
+                  >
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/ctracey92/giphy/"
+                    target="_blank"
+                    role="button"
+                    >Inspect the Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img
+                  src="Assets/Images/mngr.png"
+                  class="card-img-top"
+                  alt="giphy"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">MNGR</h5>
+                  <p class="card-text">
+                    MNGR is an intuitive project management app that allows
+                    users to: Track multiple projects, Create project-specific
+                    tasks, Assign tasks to other users, Track task details, See
+                    and update the project status, View the start date and
+                    estimated complete date.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    class="btn btn-secondary"
+                    href="https://murmuring-gorge-74790.herokuapp.com"
+                    target="_blank"
+                    role="button"
+                    >Deployed</a
+                  >
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/ctracey92/MNGR"
+                    target="_blank"
+                    role="button"
+                    >Inspect the Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img
+                  src="Assets/Images/web-scraper.png"
+                  class="card-img-top"
+                  alt="giphy"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Web Scraper</h5>
+                  <p class="card-text">
+                    An app that on the click of a button scrapes the United
+                    Nations news site for news articles, saves them to a Mongo
+                    DB, then displays them to the page. The user is then able to
+                    comment on the articles, and view comments that other people
+                    have made.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    class="btn btn-secondary"
+                    href="https://pacific-beyond-85965.herokuapp.com/"
+                    target="_blank"
+                    role="button"
+                    >Deployed</a
+                  >
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/ctracey92/web-scraper/"
+                    target="_blank"
+                    role="button"
+                    >Inspect the Code</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img
+                  src="Assets/Images/bind.PNG"
+                  class="card-img-top"
+                  alt="bind-it-app"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BIND</h5>
+                  <p class="card-text">
+                    A social media managing & marketing app for new businesses
+                    and social media influencers to help create and grow their
+                    brand. Please note that the Deployed version takes a minute
+                    to load, this is being worked on.
+                  </p>
+                </div>
+                <div class="card-body">
+                  <a
+                    class="btn btn-secondary"
+                    href="https://bind-it-app.com/"
+                    target="_blank"
+                    role="button"
+                    >Deployed</a
+                  >
+                  <a
+                    class="btn btn-secondary"
+                    href="https://github.com/ctracey92/bind/"
+                    target="_blank"
+                    role="button"
+                    >Inspect the Code</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <nav
+        id="bottom"
+        class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark"
+      >
+        <div class="" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://github.com/ctracey92/"
+                target="_blank"
+              >
+                <i class="fab fa-github-square"></i><span class="sr-only"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/cody-tracey/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="scripts">
+      <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
 </html>
